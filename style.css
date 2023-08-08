@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(17,26,37,0.8), rgba(37,36,37,0.2));
+}
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider .carousel-cell{
+    width: 100%;
+    height: 100%;
+    background: no-repeat, center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider .carousel-cell .info-contain{
+    color: aliceblue;
+    position: relative;
+}
+
+.slider .carousel-cell .info-contain .head{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: rgba(255,255,255,1);
+    margin-bottom: 8px;
+}
+
+.slider .carousel-cell .info-contain .text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgba(255,255,255,1);
+    margin-bottom: 32px;
+}
+
+.slider .carousel-cell .info-contain button{
+    padding: 12px 20px;
+    background: transparent;
+    color: white;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider .carousel-cell .info-contain button:hover{
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.slider .flickity-prev-next-button{
+    width: 85px;
+    height: 85px;
+    background: transparent;
+}
+
+.slider .flickity-prev-next-button .arrow{
+    fill: #fff
+}
+
+.slider .flickity-page-dots{
+    bottom: 60px;
+}
+
+.slider .flickity-page-dots .dot{
+    width: 40px;
+    height: 10px;
+    background: rgba(255,255,255,0.4);
+    opacity: 1;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.slider .flickity-page-dots .dot:hover, .slider .flickity-page-dots .dot.is-selected{
+    background: #fff;
+}
